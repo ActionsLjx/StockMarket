@@ -8,15 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0BED1B3726D5340D0096C458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B3626D5340D0096C458 /* AppDelegate.m */; };
-		0BED1B3A26D5340D0096C458 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B3926D5340D0096C458 /* SceneDelegate.m */; };
-		0BED1B3D26D5340D0096C458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B3C26D5340D0096C458 /* ViewController.m */; };
-		0BED1B4026D5340D0096C458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BED1B3E26D5340D0096C458 /* Main.storyboard */; };
 		0BED1B4326D5340D0096C458 /* StockMarket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B4126D5340D0096C458 /* StockMarket.xcdatamodeld */; };
 		0BED1B4526D534110096C458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BED1B4426D534110096C458 /* Assets.xcassets */; };
 		0BED1B4826D534110096C458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BED1B4626D534110096C458 /* LaunchScreen.storyboard */; };
 		0BED1B4B26D534110096C458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B4A26D534110096C458 /* main.m */; };
 		0BED1B5526D534110096C458 /* StockMarketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B5426D534110096C458 /* StockMarketTests.m */; };
 		0BED1B6026D534110096C458 /* StockMarketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B5F26D534110096C458 /* StockMarketUITests.m */; };
+		0BED1B7926D536520096C458 /* EnumMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B7826D536520096C458 /* EnumMacros.m */; };
+		0BED1B7C26D537D60096C458 /* FuncMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B7B26D537D60096C458 /* FuncMacros.m */; };
+		0BED1B8026D54B300096C458 /* UtilsMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B7F26D54B300096C458 /* UtilsMacros.m */; };
+		0BED1B8426D556E90096C458 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B8326D556E90096C458 /* BaseNavigationVC.m */; };
+		0BED1B8726D557030096C458 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B8626D557030096C458 /* BaseVC.m */; };
+		0BED1B8A26D557C60096C458 /* BaseTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B8926D557C60096C458 /* BaseTabBarVC.m */; };
+		5027BB91EDC7026802209EBE /* libPods-StockMarket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E822399074EDA96F6EC278 /* libPods-StockMarket.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +44,6 @@
 		0BED1B3226D5340D0096C458 /* StockMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BED1B3526D5340D0096C458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0BED1B3626D5340D0096C458 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0BED1B3826D5340D0096C458 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		0BED1B3926D5340D0096C458 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		0BED1B3B26D5340D0096C458 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0BED1B3C26D5340D0096C458 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0BED1B3F26D5340D0096C458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BED1B4226D5340D0096C458 /* StockMarket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StockMarket.xcdatamodel; sourceTree = "<group>"; };
 		0BED1B4426D534110096C458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BED1B4726D534110096C458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +55,22 @@
 		0BED1B5B26D534110096C458 /* StockMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BED1B5F26D534110096C458 /* StockMarketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockMarketUITests.m; sourceTree = "<group>"; };
 		0BED1B6126D534110096C458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BED1B7726D536520096C458 /* EnumMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumMacros.h; sourceTree = "<group>"; };
+		0BED1B7826D536520096C458 /* EnumMacros.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnumMacros.m; sourceTree = "<group>"; };
+		0BED1B7A26D537D60096C458 /* FuncMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuncMacros.h; sourceTree = "<group>"; };
+		0BED1B7B26D537D60096C458 /* FuncMacros.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuncMacros.m; sourceTree = "<group>"; };
+		0BED1B7D26D549AB0096C458 /* StockMarket_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockMarket_PrefixHeader.pch; sourceTree = "<group>"; };
+		0BED1B7E26D54B300096C458 /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		0BED1B7F26D54B300096C458 /* UtilsMacros.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilsMacros.m; sourceTree = "<group>"; };
+		0BED1B8226D556E90096C458 /* BaseNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationVC.h; sourceTree = "<group>"; };
+		0BED1B8326D556E90096C458 /* BaseNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationVC.m; sourceTree = "<group>"; };
+		0BED1B8526D557030096C458 /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		0BED1B8626D557030096C458 /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		0BED1B8826D557C60096C458 /* BaseTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarVC.h; sourceTree = "<group>"; };
+		0BED1B8926D557C60096C458 /* BaseTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarVC.m; sourceTree = "<group>"; };
+		44E822399074EDA96F6EC278 /* libPods-StockMarket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StockMarket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF29F9CCC2226F551CC75DD /* Pods-StockMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarket.debug.xcconfig"; path = "Target Support Files/Pods-StockMarket/Pods-StockMarket.debug.xcconfig"; sourceTree = "<group>"; };
+		E163DDD22005A1F5ED0F842A /* Pods-StockMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarket.release.xcconfig"; path = "Target Support Files/Pods-StockMarket/Pods-StockMarket.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5027BB91EDC7026802209EBE /* libPods-StockMarket.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +106,8 @@
 				0BED1B5326D534110096C458 /* StockMarketTests */,
 				0BED1B5E26D534110096C458 /* StockMarketUITests */,
 				0BED1B3326D5340D0096C458 /* Products */,
+				A1622BF16F42F8BEFFBFADED /* Pods */,
+				752E2D6E67A33B532D02952E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,17 +124,11 @@
 		0BED1B3426D5340D0096C458 /* StockMarket */ = {
 			isa = PBXGroup;
 			children = (
+				0BED1B6E26D534630096C458 /* SupportingFiles */,
+				0BED1B6D26D5344E0096C458 /* Classes */,
 				0BED1B3526D5340D0096C458 /* AppDelegate.h */,
 				0BED1B3626D5340D0096C458 /* AppDelegate.m */,
-				0BED1B3826D5340D0096C458 /* SceneDelegate.h */,
-				0BED1B3926D5340D0096C458 /* SceneDelegate.m */,
-				0BED1B3B26D5340D0096C458 /* ViewController.h */,
-				0BED1B3C26D5340D0096C458 /* ViewController.m */,
-				0BED1B3E26D5340D0096C458 /* Main.storyboard */,
 				0BED1B4426D534110096C458 /* Assets.xcassets */,
-				0BED1B4626D534110096C458 /* LaunchScreen.storyboard */,
-				0BED1B4926D534110096C458 /* Info.plist */,
-				0BED1B4A26D534110096C458 /* main.m */,
 				0BED1B4126D5340D0096C458 /* StockMarket.xcdatamodeld */,
 			);
 			path = StockMarket;
@@ -140,6 +152,102 @@
 			path = StockMarketUITests;
 			sourceTree = "<group>";
 		};
+		0BED1B6D26D5344E0096C458 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0BED1B7626D534CD0096C458 /* Define */,
+				0BED1B7526D534C20096C458 /* Utils */,
+				0BED1B7126D534940096C458 /* Model */,
+				0BED1B7226D5349B0096C458 /* View */,
+				0BED1B7426D534A50096C458 /* Controller */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0BED1B6E26D534630096C458 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0BED1B4A26D534110096C458 /* main.m */,
+				0BED1B4926D534110096C458 /* Info.plist */,
+				0BED1B4626D534110096C458 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0BED1B7126D534940096C458 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BED1B7226D5349B0096C458 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BED1B7426D534A50096C458 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0BED1B8126D556A60096C458 /* Base */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0BED1B7526D534C20096C458 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0BED1B7626D534CD0096C458 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				0BED1B7726D536520096C458 /* EnumMacros.h */,
+				0BED1B7826D536520096C458 /* EnumMacros.m */,
+				0BED1B7A26D537D60096C458 /* FuncMacros.h */,
+				0BED1B7B26D537D60096C458 /* FuncMacros.m */,
+				0BED1B7D26D549AB0096C458 /* StockMarket_PrefixHeader.pch */,
+				0BED1B7E26D54B300096C458 /* UtilsMacros.h */,
+				0BED1B7F26D54B300096C458 /* UtilsMacros.m */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		0BED1B8126D556A60096C458 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0BED1B8226D556E90096C458 /* BaseNavigationVC.h */,
+				0BED1B8326D556E90096C458 /* BaseNavigationVC.m */,
+				0BED1B8526D557030096C458 /* BaseVC.h */,
+				0BED1B8626D557030096C458 /* BaseVC.m */,
+				0BED1B8826D557C60096C458 /* BaseTabBarVC.h */,
+				0BED1B8926D557C60096C458 /* BaseTabBarVC.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		752E2D6E67A33B532D02952E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44E822399074EDA96F6EC278 /* libPods-StockMarket.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1622BF16F42F8BEFFBFADED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDF29F9CCC2226F551CC75DD /* Pods-StockMarket.debug.xcconfig */,
+				E163DDD22005A1F5ED0F842A /* Pods-StockMarket.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BED1B6426D534110096C458 /* Build configuration list for PBXNativeTarget "StockMarket" */;
 			buildPhases = (
+				373592E25EA1A55034D8A6D5 /* [CP] Check Pods Manifest.lock */,
 				0BED1B2E26D5340D0096C458 /* Sources */,
 				0BED1B2F26D5340D0096C458 /* Frameworks */,
 				0BED1B3026D5340D0096C458 /* Resources */,
@@ -244,7 +353,6 @@
 			files = (
 				0BED1B4826D534110096C458 /* LaunchScreen.storyboard in Resources */,
 				0BED1B4526D534110096C458 /* Assets.xcassets in Resources */,
-				0BED1B4026D5340D0096C458 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,16 +372,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		373592E25EA1A55034D8A6D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockMarket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0BED1B2E26D5340D0096C458 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BED1B7C26D537D60096C458 /* FuncMacros.m in Sources */,
 				0BED1B4B26D534110096C458 /* main.m in Sources */,
+				0BED1B7926D536520096C458 /* EnumMacros.m in Sources */,
+				0BED1B8426D556E90096C458 /* BaseNavigationVC.m in Sources */,
 				0BED1B4326D5340D0096C458 /* StockMarket.xcdatamodeld in Sources */,
-				0BED1B3D26D5340D0096C458 /* ViewController.m in Sources */,
+				0BED1B8026D54B300096C458 /* UtilsMacros.m in Sources */,
 				0BED1B3726D5340D0096C458 /* AppDelegate.m in Sources */,
-				0BED1B3A26D5340D0096C458 /* SceneDelegate.m in Sources */,
+				0BED1B8A26D557C60096C458 /* BaseTabBarVC.m in Sources */,
+				0BED1B8726D557030096C458 /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +446,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0BED1B3E26D5340D0096C458 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BED1B3F26D5340D0096C458 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0BED1B4626D534110096C458 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,12 +571,15 @@
 		};
 		0BED1B6526D534110096C458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF29F9CCC2226F551CC75DD /* Pods-StockMarket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23A7B6VHGX;
-				INFOPLIST_FILE = StockMarket/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/StockMarket/Classes/Define/StockMarket_PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/StockMarket/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,12 +592,15 @@
 		};
 		0BED1B6626D534110096C458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E163DDD22005A1F5ED0F842A /* Pods-StockMarket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23A7B6VHGX;
-				INFOPLIST_FILE = StockMarket/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/StockMarket/Classes/Define/StockMarket_PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/StockMarket/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
