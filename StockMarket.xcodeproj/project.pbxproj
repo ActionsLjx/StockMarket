@@ -21,6 +21,13 @@
 		0BED1B8726D557030096C458 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B8626D557030096C458 /* BaseVC.m */; };
 		0BED1B8A26D557C60096C458 /* BaseTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1B8926D557C60096C458 /* BaseTabBarVC.m */; };
 		5027BB91EDC7026802209EBE /* libPods-StockMarket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E822399074EDA96F6EC278 /* libPods-StockMarket.a */; };
+		7606338826E260AA00662CE9 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606338626E260AA00662CE9 /* HomeVC.m */; };
+		7606338926E260AA00662CE9 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7606338726E260AA00662CE9 /* HomeVC.xib */; };
+		7606338F26E2614900662CE9 /* MarketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606338D26E2614900662CE9 /* MarketVC.m */; };
+		7606339026E2614900662CE9 /* MarketVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7606338E26E2614900662CE9 /* MarketVC.xib */; };
+		7606339526E2636E00662CE9 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606339326E2636E00662CE9 /* SettingVC.m */; };
+		7606339626E2636E00662CE9 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7606339426E2636E00662CE9 /* SettingVC.xib */; };
+		7606339D26E2669B00662CE9 /* UIColor+JXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606339C26E2669B00662CE9 /* UIColor+JXColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,17 @@
 		0BED1B8826D557C60096C458 /* BaseTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarVC.h; sourceTree = "<group>"; };
 		0BED1B8926D557C60096C458 /* BaseTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarVC.m; sourceTree = "<group>"; };
 		44E822399074EDA96F6EC278 /* libPods-StockMarket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StockMarket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7606338526E260AA00662CE9 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		7606338626E260AA00662CE9 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		7606338726E260AA00662CE9 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		7606338C26E2614900662CE9 /* MarketVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarketVC.h; sourceTree = "<group>"; };
+		7606338D26E2614900662CE9 /* MarketVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketVC.m; sourceTree = "<group>"; };
+		7606338E26E2614900662CE9 /* MarketVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketVC.xib; sourceTree = "<group>"; };
+		7606339226E2636E00662CE9 /* SettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		7606339326E2636E00662CE9 /* SettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		7606339426E2636E00662CE9 /* SettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
+		7606339B26E2669B00662CE9 /* UIColor+JXColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JXColor.h"; sourceTree = "<group>"; };
+		7606339C26E2669B00662CE9 /* UIColor+JXColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JXColor.m"; sourceTree = "<group>"; };
 		DDF29F9CCC2226F551CC75DD /* Pods-StockMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarket.debug.xcconfig"; path = "Target Support Files/Pods-StockMarket/Pods-StockMarket.debug.xcconfig"; sourceTree = "<group>"; };
 		E163DDD22005A1F5ED0F842A /* Pods-StockMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarket.release.xcconfig"; path = "Target Support Files/Pods-StockMarket/Pods-StockMarket.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,10 +173,10 @@
 		0BED1B6D26D5344E0096C458 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7606338326E25CAC00662CE9 /* Utils */,
+				7606338226E25C4700662CE9 /* View */,
+				7606338126E25C3B00662CE9 /* Model */,
 				0BED1B7626D534CD0096C458 /* Define */,
-				0BED1B7526D534C20096C458 /* Utils */,
-				0BED1B7126D534940096C458 /* Model */,
-				0BED1B7226D5349B0096C458 /* View */,
 				0BED1B7426D534A50096C458 /* Controller */,
 			);
 			path = Classes;
@@ -174,33 +192,15 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		0BED1B7126D534940096C458 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0BED1B7226D5349B0096C458 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		0BED1B7426D534A50096C458 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7606339126E2617500662CE9 /* Setting */,
+				7606338B26E2612600662CE9 /* Market */,
+				7606338426E2606700662CE9 /* Home */,
 				0BED1B8126D556A60096C458 /* Base */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		0BED1B7526D534C20096C458 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		0BED1B7626D534CD0096C458 /* Define */ = {
@@ -238,13 +238,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7606338126E25C3B00662CE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7606338226E25C4700662CE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7606338326E25CAC00662CE9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7606339726E265BF00662CE9 /* Category */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7606338426E2606700662CE9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7606338526E260AA00662CE9 /* HomeVC.h */,
+				7606338626E260AA00662CE9 /* HomeVC.m */,
+				7606338726E260AA00662CE9 /* HomeVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7606338B26E2612600662CE9 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				7606338C26E2614900662CE9 /* MarketVC.h */,
+				7606338D26E2614900662CE9 /* MarketVC.m */,
+				7606338E26E2614900662CE9 /* MarketVC.xib */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		7606339126E2617500662CE9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7606339226E2636E00662CE9 /* SettingVC.h */,
+				7606339326E2636E00662CE9 /* SettingVC.m */,
+				7606339426E2636E00662CE9 /* SettingVC.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		7606339726E265BF00662CE9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7606339B26E2669B00662CE9 /* UIColor+JXColor.h */,
+				7606339C26E2669B00662CE9 /* UIColor+JXColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		A1622BF16F42F8BEFFBFADED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				DDF29F9CCC2226F551CC75DD /* Pods-StockMarket.debug.xcconfig */,
 				E163DDD22005A1F5ED0F842A /* Pods-StockMarket.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -352,6 +412,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BED1B4826D534110096C458 /* LaunchScreen.storyboard in Resources */,
+				7606338926E260AA00662CE9 /* HomeVC.xib in Resources */,
+				7606339026E2614900662CE9 /* MarketVC.xib in Resources */,
+				7606339626E2636E00662CE9 /* SettingVC.xib in Resources */,
 				0BED1B4526D534110096C458 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,13 +466,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BED1B7C26D537D60096C458 /* FuncMacros.m in Sources */,
+				7606339526E2636E00662CE9 /* SettingVC.m in Sources */,
 				0BED1B4B26D534110096C458 /* main.m in Sources */,
 				0BED1B7926D536520096C458 /* EnumMacros.m in Sources */,
+				7606338826E260AA00662CE9 /* HomeVC.m in Sources */,
 				0BED1B8426D556E90096C458 /* BaseNavigationVC.m in Sources */,
 				0BED1B4326D5340D0096C458 /* StockMarket.xcdatamodeld in Sources */,
 				0BED1B8026D54B300096C458 /* UtilsMacros.m in Sources */,
 				0BED1B3726D5340D0096C458 /* AppDelegate.m in Sources */,
+				7606338F26E2614900662CE9 /* MarketVC.m in Sources */,
 				0BED1B8A26D557C60096C458 /* BaseTabBarVC.m in Sources */,
+				7606339D26E2669B00662CE9 /* UIColor+JXColor.m in Sources */,
 				0BED1B8726D557030096C458 /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,5 +10,5 @@
 
 #import "EnumMacros.h"
 #import "FuncMacros.h"
-
+#import "UIColor+JXColor.h"
 #endif /* StockMarket_PrefixHeader_pch */
