@@ -28,6 +28,14 @@
 		7606339526E2636E00662CE9 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606339326E2636E00662CE9 /* SettingVC.m */; };
 		7606339626E2636E00662CE9 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7606339426E2636E00662CE9 /* SettingVC.xib */; };
 		7606339D26E2669B00662CE9 /* UIColor+JXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606339C26E2669B00662CE9 /* UIColor+JXColor.m */; };
+		760633A126E3AE3100662CE9 /* SearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760633A026E3AE3100662CE9 /* SearchBarView.m */; };
+		760633A326E3AE3E00662CE9 /* SearchBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760633A226E3AE3E00662CE9 /* SearchBarView.xib */; };
+		760633A726E3D20500662CE9 /* HomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760633A626E3D20500662CE9 /* HomeHeadView.m */; };
+		760633A926E3D20F00662CE9 /* HomeHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760633A826E3D20F00662CE9 /* HomeHeadView.xib */; };
+		760633AE26E3D77C00662CE9 /* PlateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760633AD26E3D77C00662CE9 /* PlateView.m */; };
+		760633B026E3D9BB00662CE9 /* PlateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760633AF26E3D9BB00662CE9 /* PlateView.xib */; };
+		760633B526E4041C00662CE9 /* CompanyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760633B326E4041C00662CE9 /* CompanyTableViewCell.m */; };
+		760633B626E4041C00662CE9 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760633B426E4041C00662CE9 /* CompanyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +95,18 @@
 		7606339426E2636E00662CE9 /* SettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
 		7606339B26E2669B00662CE9 /* UIColor+JXColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JXColor.h"; sourceTree = "<group>"; };
 		7606339C26E2669B00662CE9 /* UIColor+JXColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JXColor.m"; sourceTree = "<group>"; };
+		7606339F26E3AE3100662CE9 /* SearchBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBarView.h; sourceTree = "<group>"; };
+		760633A026E3AE3100662CE9 /* SearchBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBarView.m; sourceTree = "<group>"; };
+		760633A226E3AE3E00662CE9 /* SearchBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarView.xib; sourceTree = "<group>"; };
+		760633A526E3D20500662CE9 /* HomeHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeHeadView.h; sourceTree = "<group>"; };
+		760633A626E3D20500662CE9 /* HomeHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeHeadView.m; sourceTree = "<group>"; };
+		760633A826E3D20F00662CE9 /* HomeHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeadView.xib; sourceTree = "<group>"; };
+		760633AC26E3D77C00662CE9 /* PlateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlateView.h; sourceTree = "<group>"; };
+		760633AD26E3D77C00662CE9 /* PlateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlateView.m; sourceTree = "<group>"; };
+		760633AF26E3D9BB00662CE9 /* PlateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlateView.xib; sourceTree = "<group>"; };
+		760633B226E4041C00662CE9 /* CompanyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanyTableViewCell.h; sourceTree = "<group>"; };
+		760633B326E4041C00662CE9 /* CompanyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanyTableViewCell.m; sourceTree = "<group>"; };
+		760633B426E4041C00662CE9 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
 		DDF29F9CCC2226F551CC75DD /* Pods-StockMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarket.debug.xcconfig"; path = "Target Support Files/Pods-StockMarket/Pods-StockMarket.debug.xcconfig"; sourceTree = "<group>"; };
 		E163DDD22005A1F5ED0F842A /* Pods-StockMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarket.release.xcconfig"; path = "Target Support Files/Pods-StockMarket/Pods-StockMarket.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,6 +268,9 @@
 		7606338226E25C4700662CE9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				760633AA26E3D75900662CE9 /* Common */,
+				760633A426E3D1F700662CE9 /* HomeHeadView */,
+				7606339E26E3AE1000662CE9 /* SearchBar */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -297,6 +320,55 @@
 				7606339C26E2669B00662CE9 /* UIColor+JXColor.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		7606339E26E3AE1000662CE9 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				7606339F26E3AE3100662CE9 /* SearchBarView.h */,
+				760633A026E3AE3100662CE9 /* SearchBarView.m */,
+				760633A226E3AE3E00662CE9 /* SearchBarView.xib */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		760633A426E3D1F700662CE9 /* HomeHeadView */ = {
+			isa = PBXGroup;
+			children = (
+				760633A526E3D20500662CE9 /* HomeHeadView.h */,
+				760633A626E3D20500662CE9 /* HomeHeadView.m */,
+				760633A826E3D20F00662CE9 /* HomeHeadView.xib */,
+			);
+			path = HomeHeadView;
+			sourceTree = "<group>";
+		};
+		760633AA26E3D75900662CE9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				760633B126E403E100662CE9 /* CompanyView */,
+				760633AB26E3D76400662CE9 /* PlateView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		760633AB26E3D76400662CE9 /* PlateView */ = {
+			isa = PBXGroup;
+			children = (
+				760633AC26E3D77C00662CE9 /* PlateView.h */,
+				760633AD26E3D77C00662CE9 /* PlateView.m */,
+				760633AF26E3D9BB00662CE9 /* PlateView.xib */,
+			);
+			path = PlateView;
+			sourceTree = "<group>";
+		};
+		760633B126E403E100662CE9 /* CompanyView */ = {
+			isa = PBXGroup;
+			children = (
+				760633B226E4041C00662CE9 /* CompanyTableViewCell.h */,
+				760633B326E4041C00662CE9 /* CompanyTableViewCell.m */,
+				760633B426E4041C00662CE9 /* CompanyTableViewCell.xib */,
+			);
+			path = CompanyView;
 			sourceTree = "<group>";
 		};
 		A1622BF16F42F8BEFFBFADED /* Pods */ = {
@@ -411,11 +483,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				760633A326E3AE3E00662CE9 /* SearchBarView.xib in Resources */,
 				0BED1B4826D534110096C458 /* LaunchScreen.storyboard in Resources */,
 				7606338926E260AA00662CE9 /* HomeVC.xib in Resources */,
 				7606339026E2614900662CE9 /* MarketVC.xib in Resources */,
+				760633A926E3D20F00662CE9 /* HomeHeadView.xib in Resources */,
 				7606339626E2636E00662CE9 /* SettingVC.xib in Resources */,
+				760633B626E4041C00662CE9 /* CompanyTableViewCell.xib in Resources */,
 				0BED1B4526D534110096C458 /* Assets.xcassets in Resources */,
+				760633B026E3D9BB00662CE9 /* PlateView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,13 +546,17 @@
 				0BED1B4B26D534110096C458 /* main.m in Sources */,
 				0BED1B7926D536520096C458 /* EnumMacros.m in Sources */,
 				7606338826E260AA00662CE9 /* HomeVC.m in Sources */,
+				760633B526E4041C00662CE9 /* CompanyTableViewCell.m in Sources */,
 				0BED1B8426D556E90096C458 /* BaseNavigationVC.m in Sources */,
 				0BED1B4326D5340D0096C458 /* StockMarket.xcdatamodeld in Sources */,
+				760633AE26E3D77C00662CE9 /* PlateView.m in Sources */,
 				0BED1B8026D54B300096C458 /* UtilsMacros.m in Sources */,
 				0BED1B3726D5340D0096C458 /* AppDelegate.m in Sources */,
 				7606338F26E2614900662CE9 /* MarketVC.m in Sources */,
 				0BED1B8A26D557C60096C458 /* BaseTabBarVC.m in Sources */,
+				760633A726E3D20500662CE9 /* HomeHeadView.m in Sources */,
 				7606339D26E2669B00662CE9 /* UIColor+JXColor.m in Sources */,
+				760633A126E3AE3100662CE9 /* SearchBarView.m in Sources */,
 				0BED1B8726D557030096C458 /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
