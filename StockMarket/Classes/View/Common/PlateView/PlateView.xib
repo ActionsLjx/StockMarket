@@ -11,6 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlateView">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="gHG-rx-HAq"/>
+                <outlet property="detailLab" destination="rA2-fF-dSK" id="9at-ie-eav"/>
+                <outlet property="titleLab" destination="XvU-Vj-69Q" id="kfE-hb-uhX"/>
+                <outlet property="topConstraints" destination="j2w-nK-fEN" id="z7e-CY-a4t"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,26 +21,26 @@
             <rect key="frame" x="0.0" y="0.0" width="250" height="184"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恒生指数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvU-Vj-69Q">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恒生指数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvU-Vj-69Q">
                     <rect key="frame" x="92.5" y="54" width="65.5" height="19.5"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23503.55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epa-z9-TNF">
-                    <rect key="frame" x="89.5" y="78.5" width="71" height="19.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23503.55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epa-z9-TNF">
+                    <rect key="frame" x="10" y="78.5" width="230" height="19.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="textColor" systemColor="systemRedColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中银香港" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA2-fF-dSK">
-                    <rect key="frame" x="90.5" y="103" width="69.5" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中银香港" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA2-fF-dSK">
+                    <rect key="frame" x="10" y="103" width="230" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1171.98      +0.74%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-Pi-Avn">
-                    <rect key="frame" x="50" y="129" width="150.5" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1171.98      +0.74%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-Pi-Avn">
+                    <rect key="frame" x="10" y="129" width="230" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -49,14 +52,20 @@
                 <constraint firstItem="3Fg-Pi-Avn" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ALj-jY-Wda"/>
                 <constraint firstItem="rA2-fF-dSK" firstAttribute="top" secondItem="Epa-z9-TNF" secondAttribute="bottom" constant="5" id="D2s-9s-8Rq"/>
                 <constraint firstItem="Epa-z9-TNF" firstAttribute="top" secondItem="XvU-Vj-69Q" secondAttribute="bottom" constant="5" id="DBV-oh-Vll"/>
+                <constraint firstItem="Epa-z9-TNF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="IsX-gy-PE4"/>
                 <constraint firstItem="XvU-Vj-69Q" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="NTl-Ku-12P"/>
                 <constraint firstItem="rA2-fF-dSK" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="WXp-m0-8ri"/>
+                <constraint firstItem="rA2-fF-dSK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="aiR-Dp-7W5"/>
+                <constraint firstItem="3Fg-Pi-Avn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="c3Z-40-age"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3Fg-Pi-Avn" secondAttribute="trailing" constant="10" id="iDE-bi-eiy"/>
                 <constraint firstItem="3Fg-Pi-Avn" firstAttribute="top" secondItem="rA2-fF-dSK" secondAttribute="bottom" constant="5" id="j2w-nK-fEN"/>
                 <constraint firstItem="Epa-z9-TNF" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="jxI-10-z0y"/>
                 <constraint firstItem="XvU-Vj-69Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="nr7-x1-IFo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Epa-z9-TNF" secondAttribute="trailing" constant="10" id="toG-g1-dbV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rA2-fF-dSK" secondAttribute="trailing" constant="10" id="vFU-Ef-Xp5"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-149" y="-165"/>
+            <point key="canvasLocation" x="0.0" y="-189"/>
         </view>
     </objects>
     <resources>

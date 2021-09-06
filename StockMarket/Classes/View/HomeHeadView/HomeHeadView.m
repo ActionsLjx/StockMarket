@@ -7,8 +7,11 @@
 
 #import "HomeHeadView.h"
 #import "SearchBarView.h"
+#import "PlateView.h"
 @interface HomeHeadView()
 @property (strong, nonatomic) IBOutlet UIView *contentView;
+@property (strong, nonatomic) IBOutletCollection(PlateView) NSArray *plateArr;
+@property (weak, nonatomic) IBOutlet SearchBarView *searchBarView;
 
 
 @end
@@ -37,6 +40,15 @@
     _contentView = [nib instantiateWithOwner:self options:nil].firstObject;
     _contentView.frame = self.bounds;
     [self addSubview:_contentView];
+    [self configUI];
+}
+
+
+- (void)configUI {
+    self.searchBarView.backgroundColor = [UIColor blackColor];
+    for (PlateView *view in _plateArr) {
+        view.isHideDeatilLab = YES;
+    }
 }
 
 @end

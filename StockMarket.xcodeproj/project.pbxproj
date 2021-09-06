@@ -34,8 +34,10 @@
 		760633A926E3D20F00662CE9 /* HomeHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760633A826E3D20F00662CE9 /* HomeHeadView.xib */; };
 		760633AE26E3D77C00662CE9 /* PlateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760633AD26E3D77C00662CE9 /* PlateView.m */; };
 		760633B026E3D9BB00662CE9 /* PlateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760633AF26E3D9BB00662CE9 /* PlateView.xib */; };
-		760633B526E4041C00662CE9 /* CompanyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760633B326E4041C00662CE9 /* CompanyTableViewCell.m */; };
-		760633B626E4041C00662CE9 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760633B426E4041C00662CE9 /* CompanyTableViewCell.xib */; };
+		76A2DBBE26E666DA0057D02C /* HomeSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2DBBD26E666DA0057D02C /* HomeSectionView.m */; };
+		76A2DBC026E666F30057D02C /* HomeSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A2DBBF26E666F30057D02C /* HomeSectionView.xib */; };
+		76A2DBC526E66AE10057D02C /* StockDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2DBC326E66AE10057D02C /* StockDetailTableCell.m */; };
+		76A2DBC626E66AE10057D02C /* StockDetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A2DBC426E66AE10057D02C /* StockDetailTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,9 +106,12 @@
 		760633AC26E3D77C00662CE9 /* PlateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlateView.h; sourceTree = "<group>"; };
 		760633AD26E3D77C00662CE9 /* PlateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlateView.m; sourceTree = "<group>"; };
 		760633AF26E3D9BB00662CE9 /* PlateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlateView.xib; sourceTree = "<group>"; };
-		760633B226E4041C00662CE9 /* CompanyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanyTableViewCell.h; sourceTree = "<group>"; };
-		760633B326E4041C00662CE9 /* CompanyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanyTableViewCell.m; sourceTree = "<group>"; };
-		760633B426E4041C00662CE9 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
+		76A2DBBC26E666DA0057D02C /* HomeSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeSectionView.h; sourceTree = "<group>"; };
+		76A2DBBD26E666DA0057D02C /* HomeSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeSectionView.m; sourceTree = "<group>"; };
+		76A2DBBF26E666F30057D02C /* HomeSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSectionView.xib; sourceTree = "<group>"; };
+		76A2DBC226E66AE10057D02C /* StockDetailTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockDetailTableCell.h; sourceTree = "<group>"; };
+		76A2DBC326E66AE10057D02C /* StockDetailTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockDetailTableCell.m; sourceTree = "<group>"; };
+		76A2DBC426E66AE10057D02C /* StockDetailTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockDetailTableCell.xib; sourceTree = "<group>"; };
 		DDF29F9CCC2226F551CC75DD /* Pods-StockMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarket.debug.xcconfig"; path = "Target Support Files/Pods-StockMarket/Pods-StockMarket.debug.xcconfig"; sourceTree = "<group>"; };
 		E163DDD22005A1F5ED0F842A /* Pods-StockMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarket.release.xcconfig"; path = "Target Support Files/Pods-StockMarket/Pods-StockMarket.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -345,7 +350,8 @@
 		760633AA26E3D75900662CE9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				760633B126E403E100662CE9 /* CompanyView */,
+				76A2DBC126E66A5E0057D02C /* StockDetailTableCell */,
+				76A2DBBB26E6663E0057D02C /* HomeSectionView */,
 				760633AB26E3D76400662CE9 /* PlateView */,
 			);
 			path = Common;
@@ -361,14 +367,24 @@
 			path = PlateView;
 			sourceTree = "<group>";
 		};
-		760633B126E403E100662CE9 /* CompanyView */ = {
+		76A2DBBB26E6663E0057D02C /* HomeSectionView */ = {
 			isa = PBXGroup;
 			children = (
-				760633B226E4041C00662CE9 /* CompanyTableViewCell.h */,
-				760633B326E4041C00662CE9 /* CompanyTableViewCell.m */,
-				760633B426E4041C00662CE9 /* CompanyTableViewCell.xib */,
+				76A2DBBC26E666DA0057D02C /* HomeSectionView.h */,
+				76A2DBBD26E666DA0057D02C /* HomeSectionView.m */,
+				76A2DBBF26E666F30057D02C /* HomeSectionView.xib */,
 			);
-			path = CompanyView;
+			path = HomeSectionView;
+			sourceTree = "<group>";
+		};
+		76A2DBC126E66A5E0057D02C /* StockDetailTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				76A2DBC226E66AE10057D02C /* StockDetailTableCell.h */,
+				76A2DBC326E66AE10057D02C /* StockDetailTableCell.m */,
+				76A2DBC426E66AE10057D02C /* StockDetailTableCell.xib */,
+			);
+			path = StockDetailTableCell;
 			sourceTree = "<group>";
 		};
 		A1622BF16F42F8BEFFBFADED /* Pods */ = {
@@ -486,10 +502,11 @@
 				760633A326E3AE3E00662CE9 /* SearchBarView.xib in Resources */,
 				0BED1B4826D534110096C458 /* LaunchScreen.storyboard in Resources */,
 				7606338926E260AA00662CE9 /* HomeVC.xib in Resources */,
+				76A2DBC626E66AE10057D02C /* StockDetailTableCell.xib in Resources */,
 				7606339026E2614900662CE9 /* MarketVC.xib in Resources */,
 				760633A926E3D20F00662CE9 /* HomeHeadView.xib in Resources */,
 				7606339626E2636E00662CE9 /* SettingVC.xib in Resources */,
-				760633B626E4041C00662CE9 /* CompanyTableViewCell.xib in Resources */,
+				76A2DBC026E666F30057D02C /* HomeSectionView.xib in Resources */,
 				0BED1B4526D534110096C458 /* Assets.xcassets in Resources */,
 				760633B026E3D9BB00662CE9 /* PlateView.xib in Resources */,
 			);
@@ -546,7 +563,6 @@
 				0BED1B4B26D534110096C458 /* main.m in Sources */,
 				0BED1B7926D536520096C458 /* EnumMacros.m in Sources */,
 				7606338826E260AA00662CE9 /* HomeVC.m in Sources */,
-				760633B526E4041C00662CE9 /* CompanyTableViewCell.m in Sources */,
 				0BED1B8426D556E90096C458 /* BaseNavigationVC.m in Sources */,
 				0BED1B4326D5340D0096C458 /* StockMarket.xcdatamodeld in Sources */,
 				760633AE26E3D77C00662CE9 /* PlateView.m in Sources */,
@@ -558,6 +574,8 @@
 				7606339D26E2669B00662CE9 /* UIColor+JXColor.m in Sources */,
 				760633A126E3AE3100662CE9 /* SearchBarView.m in Sources */,
 				0BED1B8726D557030096C458 /* BaseVC.m in Sources */,
+				76A2DBBE26E666DA0057D02C /* HomeSectionView.m in Sources */,
+				76A2DBC526E66AE10057D02C /* StockDetailTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

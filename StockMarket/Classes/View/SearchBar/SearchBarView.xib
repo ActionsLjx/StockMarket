@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,21 +18,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" fixedFrame="YES" placeholder="请输入股票代码/全拼/首字母" translatesAutoresizingMaskIntoConstraints="NO" id="9ca-3n-Nc2">
-                    <rect key="frame" x="-3" y="0.0" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <searchBar contentMode="scaleAspectFit" placeholder="请输入股票代码/全拼/首字母" translatesAutoresizingMaskIntoConstraints="NO" id="9ca-3n-Nc2">
+                    <rect key="frame" x="10" y="5" width="355" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9ca-3n-Nc2" secondAttribute="bottom" constant="5" id="W9U-Gf-10x"/>
+                <constraint firstItem="9ca-3n-Nc2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="WxC-Kn-DhA"/>
+                <constraint firstItem="9ca-3n-Nc2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="YeT-HM-5dl"/>
+                <constraint firstAttribute="trailing" secondItem="9ca-3n-Nc2" secondAttribute="trailing" constant="10" id="tYi-jt-5sE"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="237" y="-215"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

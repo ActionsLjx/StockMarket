@@ -1,21 +1,19 @@
 //
-//  SearchBarView.m
+//  HomeSectionView.m
 //  StockMarket
 //
-//  Created by ljx on 2021/9/4.
+//  Created by ljx on 2021/9/6.
 //
 
-#import "SearchBarView.h"
+#import "HomeSectionView.h"
 
-@interface SearchBarView()
+@interface HomeSectionView()
 @property (strong, nonatomic) IBOutlet UIView *contentView;
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
 
 @end
 
-@implementation SearchBarView
-
-
+@implementation HomeSectionView
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if(self) {
@@ -34,11 +32,9 @@
 }
 
 - (void)initWithXib {
-    UINib *nib = [UINib nibWithNibName:@"SearchBarView" bundle:[NSBundle mainBundle]];
+    UINib *nib = [UINib nibWithNibName:@"HomeSectionView" bundle:[NSBundle mainBundle]];
     _contentView = [nib instantiateWithOwner:self options:nil].firstObject;
     _contentView.frame = self.bounds;
-    _searchBar.backgroundImage = [UIImage new];
-    self.backgroundColor = UIColor.clearColor;
     [self addSubview:_contentView];
 }
 
