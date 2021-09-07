@@ -47,7 +47,7 @@
 - (void)configUI {
     self.searchBarView.backgroundColor = [UIColor blackColor];
     for (PlateView *view in _plateArr) {
-        view.isHideDeatilLab = YES;
+        view.isBig = YES;
     }
 }
 

@@ -38,6 +38,12 @@
 		76A2DBC026E666F30057D02C /* HomeSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A2DBBF26E666F30057D02C /* HomeSectionView.xib */; };
 		76A2DBC526E66AE10057D02C /* StockDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2DBC326E66AE10057D02C /* StockDetailTableCell.m */; };
 		76A2DBC626E66AE10057D02C /* StockDetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A2DBC426E66AE10057D02C /* StockDetailTableCell.xib */; };
+		76A2DBCB26E789000057D02C /* MarketSectionOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2DBCA26E789000057D02C /* MarketSectionOneView.m */; };
+		76A2DBCD26E789130057D02C /* MarketSectionOneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A2DBCC26E789130057D02C /* MarketSectionOneView.xib */; };
+		76A2DBD226E7B7F80057D02C /* MarketPlateTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2DBD026E7B7F80057D02C /* MarketPlateTableCell.m */; };
+		76A2DBD326E7B7F80057D02C /* MarketPlateTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A2DBD126E7B7F80057D02C /* MarketPlateTableCell.xib */; };
+		76A2DBD726E7C0D70057D02C /* MarketSectionCommonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2DBD626E7C0D70057D02C /* MarketSectionCommonView.m */; };
+		76A2DBD926E7C0E00057D02C /* MarketSectionCommonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A2DBD826E7C0E00057D02C /* MarketSectionCommonView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +118,15 @@
 		76A2DBC226E66AE10057D02C /* StockDetailTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockDetailTableCell.h; sourceTree = "<group>"; };
 		76A2DBC326E66AE10057D02C /* StockDetailTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockDetailTableCell.m; sourceTree = "<group>"; };
 		76A2DBC426E66AE10057D02C /* StockDetailTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockDetailTableCell.xib; sourceTree = "<group>"; };
+		76A2DBC926E789000057D02C /* MarketSectionOneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarketSectionOneView.h; sourceTree = "<group>"; };
+		76A2DBCA26E789000057D02C /* MarketSectionOneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketSectionOneView.m; sourceTree = "<group>"; };
+		76A2DBCC26E789130057D02C /* MarketSectionOneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketSectionOneView.xib; sourceTree = "<group>"; };
+		76A2DBCF26E7B7F80057D02C /* MarketPlateTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarketPlateTableCell.h; sourceTree = "<group>"; };
+		76A2DBD026E7B7F80057D02C /* MarketPlateTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketPlateTableCell.m; sourceTree = "<group>"; };
+		76A2DBD126E7B7F80057D02C /* MarketPlateTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketPlateTableCell.xib; sourceTree = "<group>"; };
+		76A2DBD526E7C0D70057D02C /* MarketSectionCommonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarketSectionCommonView.h; sourceTree = "<group>"; };
+		76A2DBD626E7C0D70057D02C /* MarketSectionCommonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketSectionCommonView.m; sourceTree = "<group>"; };
+		76A2DBD826E7C0E00057D02C /* MarketSectionCommonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketSectionCommonView.xib; sourceTree = "<group>"; };
 		DDF29F9CCC2226F551CC75DD /* Pods-StockMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarket.debug.xcconfig"; path = "Target Support Files/Pods-StockMarket/Pods-StockMarket.debug.xcconfig"; sourceTree = "<group>"; };
 		E163DDD22005A1F5ED0F842A /* Pods-StockMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarket.release.xcconfig"; path = "Target Support Files/Pods-StockMarket/Pods-StockMarket.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,6 +288,7 @@
 		7606338226E25C4700662CE9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				76A2DBC726E788280057D02C /* Market */,
 				760633AA26E3D75900662CE9 /* Common */,
 				760633A426E3D1F700662CE9 /* HomeHeadView */,
 				7606339E26E3AE1000662CE9 /* SearchBar */,
@@ -385,6 +401,46 @@
 				76A2DBC426E66AE10057D02C /* StockDetailTableCell.xib */,
 			);
 			path = StockDetailTableCell;
+			sourceTree = "<group>";
+		};
+		76A2DBC726E788280057D02C /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				76A2DBD426E7C0B80057D02C /* MarketSectionCommonView */,
+				76A2DBCE26E7B7DA0057D02C /* MarketPlateCell */,
+				76A2DBC826E788E00057D02C /* MarketSectionOneView */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		76A2DBC826E788E00057D02C /* MarketSectionOneView */ = {
+			isa = PBXGroup;
+			children = (
+				76A2DBC926E789000057D02C /* MarketSectionOneView.h */,
+				76A2DBCA26E789000057D02C /* MarketSectionOneView.m */,
+				76A2DBCC26E789130057D02C /* MarketSectionOneView.xib */,
+			);
+			path = MarketSectionOneView;
+			sourceTree = "<group>";
+		};
+		76A2DBCE26E7B7DA0057D02C /* MarketPlateCell */ = {
+			isa = PBXGroup;
+			children = (
+				76A2DBCF26E7B7F80057D02C /* MarketPlateTableCell.h */,
+				76A2DBD026E7B7F80057D02C /* MarketPlateTableCell.m */,
+				76A2DBD126E7B7F80057D02C /* MarketPlateTableCell.xib */,
+			);
+			path = MarketPlateCell;
+			sourceTree = "<group>";
+		};
+		76A2DBD426E7C0B80057D02C /* MarketSectionCommonView */ = {
+			isa = PBXGroup;
+			children = (
+				76A2DBD526E7C0D70057D02C /* MarketSectionCommonView.h */,
+				76A2DBD626E7C0D70057D02C /* MarketSectionCommonView.m */,
+				76A2DBD826E7C0E00057D02C /* MarketSectionCommonView.xib */,
+			);
+			path = MarketSectionCommonView;
 			sourceTree = "<group>";
 		};
 		A1622BF16F42F8BEFFBFADED /* Pods */ = {
@@ -501,14 +557,17 @@
 			files = (
 				760633A326E3AE3E00662CE9 /* SearchBarView.xib in Resources */,
 				0BED1B4826D534110096C458 /* LaunchScreen.storyboard in Resources */,
+				76A2DBCD26E789130057D02C /* MarketSectionOneView.xib in Resources */,
 				7606338926E260AA00662CE9 /* HomeVC.xib in Resources */,
 				76A2DBC626E66AE10057D02C /* StockDetailTableCell.xib in Resources */,
 				7606339026E2614900662CE9 /* MarketVC.xib in Resources */,
+				76A2DBD926E7C0E00057D02C /* MarketSectionCommonView.xib in Resources */,
 				760633A926E3D20F00662CE9 /* HomeHeadView.xib in Resources */,
 				7606339626E2636E00662CE9 /* SettingVC.xib in Resources */,
 				76A2DBC026E666F30057D02C /* HomeSectionView.xib in Resources */,
 				0BED1B4526D534110096C458 /* Assets.xcassets in Resources */,
 				760633B026E3D9BB00662CE9 /* PlateView.xib in Resources */,
+				76A2DBD326E7B7F80057D02C /* MarketPlateTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +620,7 @@
 				0BED1B7C26D537D60096C458 /* FuncMacros.m in Sources */,
 				7606339526E2636E00662CE9 /* SettingVC.m in Sources */,
 				0BED1B4B26D534110096C458 /* main.m in Sources */,
+				76A2DBD726E7C0D70057D02C /* MarketSectionCommonView.m in Sources */,
 				0BED1B7926D536520096C458 /* EnumMacros.m in Sources */,
 				7606338826E260AA00662CE9 /* HomeVC.m in Sources */,
 				0BED1B8426D556E90096C458 /* BaseNavigationVC.m in Sources */,
@@ -568,6 +628,7 @@
 				760633AE26E3D77C00662CE9 /* PlateView.m in Sources */,
 				0BED1B8026D54B300096C458 /* UtilsMacros.m in Sources */,
 				0BED1B3726D5340D0096C458 /* AppDelegate.m in Sources */,
+				76A2DBCB26E789000057D02C /* MarketSectionOneView.m in Sources */,
 				7606338F26E2614900662CE9 /* MarketVC.m in Sources */,
 				0BED1B8A26D557C60096C458 /* BaseTabBarVC.m in Sources */,
 				760633A726E3D20500662CE9 /* HomeHeadView.m in Sources */,
@@ -576,6 +637,7 @@
 				0BED1B8726D557030096C458 /* BaseVC.m in Sources */,
 				76A2DBBE26E666DA0057D02C /* HomeSectionView.m in Sources */,
 				76A2DBC526E66AE10057D02C /* StockDetailTableCell.m in Sources */,
+				76A2DBD226E7B7F80057D02C /* MarketPlateTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

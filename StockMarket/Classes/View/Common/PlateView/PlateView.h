@@ -10,9 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PlateView : UIView
-@property (weak, nonatomic) IBOutlet UILabel *titleLab;
-@property (weak, nonatomic) IBOutlet UILabel *detailLab;
-@property (nonatomic,assign)BOOL isHideDeatilLab;
+@property (nonatomic,assign)BOOL isBig;
 
 @end
 
