@@ -10,16 +10,49 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarketSectionCommonView">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="6ws-9S-vCS"/>
+                <outlet property="moreBtn" destination="jXL-Fh-GOP" id="rxx-7h-VaT"/>
+                <outlet property="showBtn" destination="EzN-TV-e7a" id="Gz3-yQ-fFW"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="326" height="35"/>
+            <rect key="frame" x="0.0" y="0.0" width="326" height="82"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXL-Fh-GOP">
+                    <rect key="frame" x="283" y="45.5" width="35" height="35"/>
+                    <state key="normal" image="moreBtn"/>
+                    <connections>
+                        <action selector="showMoreBtnClick:" destination="-1" eventType="touchUpInside" id="3nv-nV-byh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzN-TV-e7a">
+                    <rect key="frame" x="8" y="45" width="86.5" height="36.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="热门行业" image="pullDown1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" image="pullDown"/>
+                    <connections>
+                        <action selector="showBtnClick:" destination="-1" eventType="touchUpInside" id="q5e-ik-7XH"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.10588235294117647" green="0.13333333333333333" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EzN-TV-e7a" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="89h-g8-RwW"/>
+                <constraint firstItem="jXL-Fh-GOP" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="WSD-TD-jeu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jXL-Fh-GOP" secondAttribute="trailing" constant="8" id="oQP-vQ-lny"/>
+                <constraint firstItem="EzN-TV-e7a" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="zPI-R4-KQH"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-46" y="-138"/>
+            <point key="canvasLocation" x="-4" y="-83"/>
         </view>
     </objects>
+    <resources>
+        <image name="moreBtn" width="35" height="35"/>
+        <image name="pullDown" width="35" height="35"/>
+        <image name="pullDown1" width="36.666667938232422" height="36.666667938232422"/>
+    </resources>
 </document>

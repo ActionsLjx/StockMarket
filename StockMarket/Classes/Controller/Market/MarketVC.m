@@ -9,11 +9,16 @@
 #import "MarketSectionOneView.h"
 #import "StockDetailTableCell.h"
 #import "MarketPlateTableCell.h"
+#import "MarketSectionCommonView.h"
 static NSString *marketCellID = @"marketCellid";
 static NSString *marketPlateCellID = @"marketPlateCellID";
 @interface MarketVC ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)MarketSectionOneView *sectionOneView;
 @property(nonatomic,strong)UITableView *tableview;
+@property(nonatomic,strong)MarketSectionCommonView *secondSectionView;
+@property(nonatomic,strong)MarketSectionCommonView *thirdSectionView;
+@property(nonatomic,assign)BOOL isShowSecondData;
+@property(nonatomic,assign)BOOL isShowThirdData;
 @end
 
 @implementation MarketVC
@@ -39,10 +44,38 @@ static NSString *marketPlateCellID = @"marketPlateCellID";
     return _sectionOneView;
 }
 
+- (MarketSectionCommonView *)secondSectionView {
+    if (!_secondSectionView) {
+        _secondSectionView = [[MarketSectionCommonView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 35)];
+        [_secondSectionView configUIWithTitle:@"热门行业" defaultIsSelect:self.isShowSecondData];
+        __weak typeof(self) weakself = self;
+        _secondSectionView.showData = ^(NSInteger tag) {
+            weakself.isShowSecondData = tag;
+            [weakself.tableview reloadData];
+        };
+    }
+    return _secondSectionView;;
+}
+
+
+- (MarketSectionCommonView *)thirdSectionView {
+    if (!_thirdSectionView) {
+        _thirdSectionView = [[MarketSectionCommonView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 35)];
+        [_thirdSectionView configUIWithTitle:@"主板涨幅榜" defaultIsSelect:self.isShowThirdData];
+        __weak typeof(self) weakself = self;
+        _thirdSectionView.showData = ^(NSInteger tag) {
+            weakself.isShowThirdData = tag;
+            [weakself.tableview reloadData];
+        };
+    }
+    return _thirdSectionView;
+}
 #pragma mark ---- 生命周期
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.isShowSecondData = YES;
+    self.isShowThirdData = YES;
     self.navigationItem.title = @"行情";
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
@@ -54,10 +87,10 @@ static NSString *marketPlateCellID = @"marketPlateCellID";
         return 1;
     }
     else if (section == 1) {
-        return 2;
+        return _isShowSecondData ? 2 : 0;
     }
     else {
-        return 0;
+        return _isShowThirdData ? 5 : 0;
     }
 }
 
@@ -68,8 +101,11 @@ static NSString *marketPlateCellID = @"marketPlateCellID";
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     if (section == 0) {
         return self.sectionOneView;
+    }else if (section == 1) {
+        return self.secondSectionView;
+    }else {
+        return self.thirdSectionView;
     }
-    return [UIView new];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -28,7 +28,7 @@ static const CGFloat kNavigationBarHeight = 44.0;
 #define kNotifCenter            [NSNotificationCenter defaultCenter]
 
 @interface UtilsMacros : NSObject
-
+typedef void(^btnClickBlock)(NSInteger tag);
 @end
 
 NS_ASSUME_NONNULL_END

@@ -6,7 +6,6 @@
 //
 
 #import "MarketSectionOneView.h"
-typedef void(^btnClickBlock)(NSInteger tag);
 @interface MarketSectionOneView()
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *btnArr;

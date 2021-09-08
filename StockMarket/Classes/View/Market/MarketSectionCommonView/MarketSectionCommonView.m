@@ -8,6 +8,8 @@
 #import "MarketSectionCommonView.h"
 @interface MarketSectionCommonView()
 @property (strong, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UIButton *showBtn;
+@property (weak, nonatomic) IBOutlet UIButton *moreBtn;
 
 @end
 
@@ -38,5 +40,27 @@
     _contentView.frame = self.bounds;
     [self addSubview:_contentView];
 }
+
+- (void)configUIWithTitle:(NSString *)title
+          defaultIsSelect:(BOOL)isSelect{
+    [_showBtn setTitle:title forState:(UIControlStateNormal)];
+    _showBtn.selected = isSelect;
+}
+
+
+- (IBAction)showBtnClick:(UIButton *)sender {
+    sender.selected = !sender.isSelected;
+    if(_showData) {
+        _showData(sender.selected);
+    }
+}
+
+- (IBAction)showMoreBtnClick:(UIButton *)sender {
+    if(_showMore) {
+        _showMore(1);
+    }
+}
+
+
 
 @end
